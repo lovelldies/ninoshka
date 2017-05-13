@@ -1,2 +1,2 @@
 # ninoshka
-Source code to Ninoshka's Website
+Source code of Ninoshka's Website. Now powered by Jekyll.

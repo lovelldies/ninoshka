@@ -1,0 +1,23 @@
+---
+layout: default
+category: collection
+title: Women's wear
+permalink: /collections/womens-wear/
+---
+
+<div class="container-fluid no-padding">
+  {% for post in site.categories.collection %}
+  <div class="row row-no-padding main-div" style="background-color:#fff;">
+    <div class="{% cycle 'col-md-4 col-lg-push-8 col-md-push-8', 'col-md-4' %}" style="text-align: center;">
+      <div class="main-text-padding">
+        <h1 style="font-size: 45px; font-weight: 100;">{{ post.h1 }}</h1>
+        <p class="main-p">{{ post.excerpt }}</p>
+          <a href="{{ post.permalink }}" class="btn btn-default" role="button">View</a>
+      </div>
+    </div>
+    <div class="{% cycle 'col-md-8 col-lg-pull-4 col-md-pull-4', 'col-md-8' %}" style="min-height:650px; background-size: cover; background-position: center center;
+  background-repeat: no-repeat; background-image: url('{{ site.baseurl }}/assets/images/{{ post.image }}');">
+    </div>
+  </div>
+  {% endfor %}
+</div>

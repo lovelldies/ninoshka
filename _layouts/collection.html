@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="container-fluid no-padding">
+  <div class="row row-no-padding main-div" style="background-color:#fff;">
+    <div class="col-md-5" style="text-align: center;">
+      <div class="main-text-padding">
+        <h1 style="font-size: 45px; font-weight: 100;">{{ page.h1 }}</h1>
+        {{ page.collectiontext }}
+      </div>
+    </div>
+    <div class="col-md-7" style="min-height:650px; background-size: cover; background-position:  bottom left; background-repeat: no-repeat; background-image: url('{{ site.baseurl }}/assets/images/{{ page.image }}');">
+    </div>
+  </div>
+  <div class="row row-no-padding main-div">
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        {{ content }}
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&laquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&raquo;</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:300,400,600,700|Open+Sans:300,400,600,700');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #4b464a;
+}
+
+#banner h2,
+#banner h3,
+#banner h4 {
+  text-shadow: 1px 2px 4px rgba(0,0,0,.55);
+  xtext-shadow: -2px 2px 4px rgba(0,0,0,1);
+  font-weight: 100;
+}
+
+#banner h2 {
+  font-size: 100px;
+  color: #fff;
+  text-transform: uppercase;
+}
+#banner h3 {
+  font-size: 49px;
+  color: #9bbae6;
+  margin: 0;
+}
+#banner h4 {
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  border-left: 1px solid #9bbae6;
+  margin: 20px 30px 20px 45px;
+  padding-left: 25px;
+  font-weight: 500;
+}
+
+.banner-image {
+  background-repeat: no-repeat;
+  border-bottom: 0;
+  background-position: center center;
+  background-size: cover;
+}
+
+.banner-homepage {
+  height: 960px;
+}
+
+.banner-designer-profile {
+  height: 600px;
+}
+
+.banner-text {
+  padding: 10% 0 10% 20%;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+.bottom-social li {
+  list-style: none;
+  display: inline;
+  margin: 0 12px;
+}
+.bottom-social a {
+  color: #9d9d9d;
+}
+.bottom-social a:hover {
+  color: #fff;
+}
+
+#bp-photo {
+  min-height: 600px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url('http://ninoshka.co.in/images/ninoshka-with-artisans.jpg');
+}
+
+.btn {
+  border-radius: 0;
+  margin: 15px 0;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.carousel-control {
+  padding-top: 15%;
+  width: 5%;
+  font-size: -webkit-xxx-large;
+}
+
+.collection-img {
+  min-height: 850px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 1px solid #fff;
+}
+.collection-img-text {
+  color: #fff;
+  text-transform: uppercase;
+  border-right: 1px solid #b3c75c;
+  margin: 20px 30px 20px 45px;
+  padding-right: 13px;
+  font-weight: 500;
+  text-shadow: 1px 2px 4px rgba(0,0,0,.55);
+}
+
+#contact-map {
+  height: 550px;
+}
+
+.container-fluid {
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Advent Pro', sans-serif;
+}
+
+h1 a:hover {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 500;
+}
+
+footer {
+  background-color: #4b464a;
+  padding: 15px 0;
+}
+
+
+#myCarousel .col-sm-3 {
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.fa-3x {
+  margin-right: 10px;
+}
+
+.main-p .lyl-big {
+  font-size: 1.2em;
+}
+
+.main-h1 {
+  font-size: 45px;
+  font-weight: 100;
+}
+.main-div {
+  border-bottom: 1px solid #fff;
+}
+.main-p {
+  font-size: 1.4em;
+  font-weight: 100;
+  line-height: 1.65em;
+  margin-top: 25px;
+}
+.main-text-padding {
+  padding: 50px 10%;
+}
+.maps iframe{
+  pointer-events: none;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-inverse {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+  z-index: 1050;
+}
+
+#ninoshka-logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 5px;
+  background-color: #4b464a;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #fff;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row-no-padding > [class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.row .media {
+  margin-bottom: 20px;
+}
+.media-body {
+  padding: 20px;
+}
+.media-p {
+  padding-top: 10px;  
+}
+
+#stores h1 {
+  font-size: 45px;
+  font-weight: 100;
+}
+
+.text-muted {
+  color: #9d9d9d;
+}
+.text-muted a {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 768px) {
+  #banner h2 {
+    font-size: 3.3em;
+  }
+  #banner h3 {
+    font-size: 1.8em;
+  }
+  #banner h4 {
+    font-size: 1.2em;
+    margin: 10px 30px 20px 20px;
+    padding-left: 20px;
+  }
+  .banner-homepage {
+    height: 600px;
+  }
+  #bp-photo {
+    min-height: 250px;
+  }
+  .collection-img {
+    min-height: 530px;
+  }
+  #dp .banner-text {
+    padding: 10% 0 10% 10%;
+  }
+  #dp .banner-designer-profile {
+    height: 270px;
+  }
+  .main-text-padding {
+    padding: 20px 10%;
+  }
+  #ninoshka-logo {
+    overflow: hidden;
+  }
+  #ninoshka-logo img {
+    margin-right: -30px;
+  }
+  #contact-map {
+    height: 350px;
+  }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) 
+                   and (max-device-width : 1024px) {
+  /* Styles */
+  .collection-img {
+    min-height: 530px;
+  }
+  #stores h1 {
+    font-size: 35px;
+  }
+  #stores .main-p {
+    font-size: 1.1em;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px)
+                   and (max-device-width : 1024px)
+                   and (orientation : portrait) {
+  #banner h2 {
+    font-size: 4em;
+  }
+  #banner h3 {
+    font-size: 2.5em;
+  }
+  #banner h4 {
+    font-size: 1.6em;
+  }
+  .banner-homepage {
+    height: 930px;
+  }
+  #bp-photo {
+    min-height: 450px;
+  }
+  .collection-img {
+    min-height: 900px;
+  }
+  .container .nav>li>a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #dp .banner-designer-profile {
+    height: 350px;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px)
+                   and (max-device-width : 1024px)
+                   and (orientation : landscape) {
+  /* Styles */
+  #contact-map {
+    height: 350px;
+  }
+  .container .nav>li>a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .banner-homepage {
+    height: 700px;
+  }
+  #bp-photo {
+    min-height: 550px;
+  }
+  #dp .banner-text {
+    padding: 10% 0 10% 15%;
+  }
+  #dp .banner-designer-profile {
+    height: 500px;
+  }
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5),
+       only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
+}

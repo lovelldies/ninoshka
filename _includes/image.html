@@ -1,0 +1,9 @@
+{% capture photofile %}{{ include.file }}{% endcapture %}
+{% capture photofolder %}{{ include.folder }}{% endcapture %}
+<div class="col-sm-3 thumbnail">
+  <img src="{{ site.baseurl }}/assets/images/{{ photofolder }}/{{ photofile }}.jpg" alt="{{ photofile }}
+  " class="img-responsive">
+  <div class="caption">
+    <h4 class="collection-img-text">{{ photofile }}</h4>
+  </div>
+</div>
