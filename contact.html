@@ -3,7 +3,6 @@ layout: default
 permalink: /contact/
 title: Contact Me
 ---
-
 <div class="container-fluid no-padding" id="banner">
   <div class="row row-no-padding main-div" style="background-color:#fff;">
     <div class="col-md-5">
@@ -24,53 +23,36 @@ title: Contact Me
       <div class="main-text-padding">
         <h1 style="font-size: 45px; font-weight: 100;">Contact Form</h1>
         <p class="main-p">
-          <form id="contact-form" method="post" action="javascript:voic(0);" role="form">
-            <div class="messages"></div>
-            <div class="controls">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="form_name">Name *</label>
-                            <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Name is required.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_email">Email *</label>
-                            <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Valid email is required.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_phone">Phone</label>
-                            <input id="form_phone" type="tel" name="phone" class="form-control">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="form_message">Message *</label>
-                            <textarea id="form_message" name="message" class="form-control" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <input type="submit" class="btn btn-default btn-send" value="Send message">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="text-muted"><strong>*</strong> These fields are required.
-                    </div>
-                </div>
+          <form id="email-form">
+            <input type="hidden" name="sendto" value="info@ninoshka.co.in">
+            <div class="col-md-12 form-group">
+              <label for="name">Name *</label>
+              <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required="true">
             </div>
-        </form>
+            <div class="col-md-6 col-sm-6 form-group">
+              <label for="email">Email *</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your email address" required="true">
+            </div>
+            <div class="col-md-6 col-sm-6 form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your phone number">
+            </div>
+            <div class="col-md-12 form-group">
+              <label for="email">Message *</label>
+              <textarea class="form-control" rows="4" name="message" id="message" placeholder="Please leave us a message." required="true"></textarea>
+            </div>
+            <div class="col-md-12">
+              <p class="text-muted"><strong>*</strong> Required fields.</p>
+            </div>
+            <div class="col-md-12 form-group">
+              <center>
+                <div id="response"></div>
+                <input type="submit" value="Submit" class="btn btn-primary btn-lg" />
+                <input type="reset" value="Reset" class="btn btn-lg" />
+              </center>
+            </div>
+            </div>
+          </form>
         </p>
       </div>
     </div>
@@ -79,3 +61,4 @@ title: Contact Me
     <iframe id="contact-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3232.3925448508307!2d73.78443507730913!3d15.538977021121863!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff1f9e61128d5452!2sNinoshka!5e0!3m2!1sen!2s!4v1479908589711" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 </div>
+<script type="text/javascript" src="http://sandbox.lovelldsouza.com/remoteemail/remoteemail.min.js"></script>
