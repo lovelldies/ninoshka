@@ -1,7 +1,7 @@
 baseurl: ''
-title: Ninoshka &mdash; Fashion with a conscience
+title: Ninoshka &ndash; Fashion with a conscience
 description: Ninoshka Alvares-Delaney is an Indian fashion designer from Goa who believes in Fashion with a conscience.
-exclude: ['README.md', 'ninoshka.sublime-workspace']
+exclude: ['README.md', 'ninoshka.sublime-workspace', '.jekyll-metadata']
 markdown: redcarpet
-name: Ninoshka - Fashion with a conscience
-permalink: /:categories/:title
+name: Ninoshka &ndash; Fashion with a conscience
+permalink: /:categories/:title/
